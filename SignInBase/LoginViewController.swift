@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, GIDSignInUIDelegate {
+class LoginViewController: UIViewController, AuthUIDelegate {
 
     @IBOutlet weak var buttonSignInFacebook: UIButton!
     @IBOutlet weak var buttonSignInGoogle: GIDSignInButton!
@@ -18,23 +18,9 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        /* GOOGLE SIGN-IN UI */
-        /* -----------------------------------------------------------------
-           Note: When users silently sign in, the Sign-In SDK automatically 
-           acquires access tokens and automatically refreshes them when 
-           necessary. If you need the access token and want the SDK to 
-           automatically handle refreshing it, you can use the 
-           getAccessTokenWithHandler: method. To explicitly refresh the 
-           access token, call the refreshAccessTokenWithHandler: method.
-        */
-        GIDSignIn.sharedInstance().uiDelegate = self
-        
-        // Uncomment to automatically sign in the user.
-        //GIDSignIn.sharedInstance().signInSilently()
-        
-        // TODO(developer) Configure the sign-in button look/feel
-        // ...
+    
+        Auth.sharedInstance.authUIDelegate = self
+        Auth.sharedInstance.loginViewController = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,9 +32,11 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBAction func didTapSignIn(sender: AnyObject) {
         if(sender as! NSObject == self.buttonSignInGoogle) {
-            GIDSignIn.sharedInstance().signIn()
+            Auth.sharedInstance.login(.Google)
         }
-        self.performSegueWithIdentifier("SegueLoginToHome", sender: self);
+        else if(sender as! NSObject == self.buttonSignInFacebook) {
+            Auth.sharedInstance.login(.Facebook)
+        }
     }
 
     // MARK: - Navigation
@@ -56,7 +44,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "SegueLoginToHome") {
             let homeVC: HomeViewController = segue.destinationViewController as! HomeViewController
-            homeVC.loginService = "Google"
+            homeVC.loginService = Auth.sharedInstance.currentAuthMethod.rawValue
         }
     }
     
@@ -65,6 +53,21 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
             
         }
     }
+    
+    // MARK: - AuthUIDelegate
+    
+    func authUILoginDidSucceed() {
+        self.performSegueWithIdentifier("SegueLoginToHome", sender: self)
+    }
+    
+    func authUILoginDidCancel() {
+        print("Login was cancelled")
+    }
+    
+    func authUILoginDidError() {
+        print("Login was unsuccessful")
+    }
+    
 
 }
 

@@ -14,11 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    /* XXXX (FACEBOOK SIGN-IN) */
-    
-    
-    /* APP DELEGATE METHODS */
-    
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         
         // URL intended for Google SDK
@@ -42,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         // Configure Google Sign-In
+        Auth.sharedInstance.google.signIn.uiDelegate = Auth.sharedInstance.google
         let googleDidFinish: Bool = Auth.sharedInstance.google.configure(
             application,
             didFinishLaunchingWithOptions: launchOptions)

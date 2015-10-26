@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - AuthCustom
-class AuthCustom: NSObject, AuthAppMethod {
+class AuthCustom: NSObject, AuthAppMethod, AuthMethod {
     
     // Singleton
     static let sharedInstance = AuthCustom()
@@ -20,36 +20,23 @@ class AuthCustom: NSObject, AuthAppMethod {
     
     // MARK: - AuthAppMethod Protocol
     func configure(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-        var configureError: NSError?
-        GGLContext.sharedInstance().configureWithError(&configureError)
-        assert(configureError == nil, "Error configuring Google services: \(configureError)")
-        self.signIn.delegate = self
         return true
     }
     
     func openURL(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        return self.signIn.handleURL(url, sourceApplication: sourceApplication, annotation: annotation)
+        return true
     }
     
+    // MARK: - AuthMethod Protocol
     func isLoggedIn() -> Bool {
-        if(self.signIn.currentUser != nil) {
-            return true
-        }
-        else {
-            return false
-        }
+        return false
     }
     
-    func login(fromViewController: UIViewController) {
-        self.signIn.signIn();
-        // TODO: Does the signInButton belong here or in a Login VC?
-        // UI delegate method impl not needed if Login VC adopts GIDSignInUIDelegate
-        //self.signInButton.sendActionsForControlEvents(.TouchUpInside)
+    func login() {
+        // TODO: implement custom login
     }
     
     func logout() {
-        // Revokes authentication, token removed from keychain
-        self.signIn.signOut()
-        self.signIn.disconnect()
+        // TODO: implement custom logout
     }
 }

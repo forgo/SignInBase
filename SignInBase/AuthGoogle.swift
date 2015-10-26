@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - AuthGoogle
-class AuthGoogle: NSObject, AuthAppMethod, GIDSignInDelegate, GIDSignInUIDelegate  {
+class AuthGoogle: NSObject, AuthAppMethod, AuthMethod, GIDSignInDelegate, GIDSignInUIDelegate {
     
     // Singleton
     static let sharedInstance = AuthGoogle()
@@ -21,7 +21,7 @@ class AuthGoogle: NSObject, AuthAppMethod, GIDSignInDelegate, GIDSignInUIDelegat
     // Auth method classes invokes AuthDelegate methods to align SDK differences
     var delegate: AuthDelegate?
     
-    private var signIn: GIDSignIn
+    var signIn: GIDSignIn
     private var signInButton: GIDSignInButton!
     
     // MARK: - AuthAppMethod Protocol
@@ -30,6 +30,7 @@ class AuthGoogle: NSObject, AuthAppMethod, GIDSignInDelegate, GIDSignInUIDelegat
         GGLContext.sharedInstance().configureWithError(&configureError)
         assert(configureError == nil, "Error configuring Google services: \(configureError)")
         self.signIn.delegate = self
+        self.delegate = Auth.sharedInstance
         return true
     }
     
@@ -37,6 +38,7 @@ class AuthGoogle: NSObject, AuthAppMethod, GIDSignInDelegate, GIDSignInUIDelegat
         return self.signIn.handleURL(url, sourceApplication: sourceApplication, annotation: annotation)
     }
     
+    // MARK: - AuthMethod Protocol
     func isLoggedIn() -> Bool {
         if(self.signIn.currentUser != nil) {
             return true
@@ -46,11 +48,8 @@ class AuthGoogle: NSObject, AuthAppMethod, GIDSignInDelegate, GIDSignInUIDelegat
         }
     }
     
-    func login(fromViewController: UIViewController) {
+    func login() {
         self.signIn.signIn();
-        // TODO: Does the signInButton belong here or in a Login VC?
-        // UI delegate method impl not needed if Login VC adopts GIDSignInUIDelegate
-        //self.signInButton.sendActionsForControlEvents(.TouchUpInside)
     }
 
     func logout() {
@@ -89,10 +88,10 @@ class AuthGoogle: NSObject, AuthAppMethod, GIDSignInDelegate, GIDSignInUIDelegat
                 pic = UIImage(data: picData)!
             }
             else {
-                pic = UIImage(named: "defaultProfilePic")!
+                pic = AuthConstant.Default.ProfilePic
             }
             
-            let authUser = AuthUser(userId: userId, accessToken: accessToken, name: name, email: email, pic: pic)
+            let authUser = AuthUser(service: .Google, userId: userId, accessToken: accessToken, name: name, email: email, pic: pic)
             self.delegate?.loginSuccess(.Google, user: authUser)
         } else {
             self.delegate?.loginError(.Google, error: error)
@@ -111,27 +110,28 @@ class AuthGoogle: NSObject, AuthAppMethod, GIDSignInDelegate, GIDSignInUIDelegat
     }
     
     // MARK: - GIDSignInUIDelegate
-    /* -------------------------------------------------------------------------
-    Implement these methods only if the GIDSignInUIDelegate is not a subclass of
-    UIViewController.
     
-    Stop the UIActivityIndicatorView animation that was started when the user
-    pressed the Sign In button
-    */
+    // The sign-in flow has finished selecting how to proceed, and the UI should no longer display
+    // a spinner or other "please wait" element.
     func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
-//        myActivityIndicator.stopAnimating()
+        print("signInWillDispatch (Google)")
+        // stop animating spinner
     }
     
-    // Present a view that prompts the user to sign in with Google
-    func signIn(signIn: GIDSignIn!,
-        presentViewController viewController: UIViewController!) {
-//            self.presentViewController(viewController, animated: true, completion: nil)
+    // If implemented, this method will be invoked when sign in needs to display a view controller.
+    // The view controller should be displayed modally (via UIViewController's |presentViewController|
+    // method, and not pushed unto a navigation controller's stack.
+    func signIn(signIn: GIDSignIn!, presentViewController viewController: UIViewController!) {
+        print("signIn presentViewController (Google)")
+        Auth.sharedInstance.loginViewController?.presentViewController(viewController, animated: true, completion: nil)
     }
     
-    // Dismiss the "Sign in with Google" view
-    func signIn(signIn: GIDSignIn!,
-        dismissViewController viewController: UIViewController!) {
-//            self.dismissViewControllerAnimated(true, completion: nil)
+    // If implemented, this method will be invoked when sign in needs to dismiss a view controller.
+    // Typically, this should be implemented by calling |dismissViewController| on the passed
+    // view controller.
+    func signIn(signIn: GIDSignIn!, dismissViewController viewController: UIViewController!) {
+        print("signIn dismissViewController (Google)")
+        Auth.sharedInstance.loginViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
-        
+    
 }

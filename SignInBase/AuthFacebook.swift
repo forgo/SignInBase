@@ -11,7 +11,7 @@ import FBSDKLoginKit
 import UIKit
 
 // MARK: - AuthFacebook
-class AuthFacebook: NSObject, AuthAppMethod {
+class AuthFacebook: NSObject, AuthAppMethod, AuthMethod {
     
     // Singleton
     static let sharedInstance = AuthFacebook()
@@ -26,6 +26,7 @@ class AuthFacebook: NSObject, AuthAppMethod {
     
     // MARK: - AuthAppMethod Protocol
     func configure(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        self.delegate = Auth.sharedInstance
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 
@@ -33,6 +34,7 @@ class AuthFacebook: NSObject, AuthAppMethod {
         return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
     }
     
+    // MARK: - AuthMethod Protocol
     func isLoggedIn() -> Bool {
         if(FBSDKAccessToken.currentAccessToken() != nil) {
             return true
@@ -42,8 +44,8 @@ class AuthFacebook: NSObject, AuthAppMethod {
         }
     }
     
-    func login(fromViewController: UIViewController) {
-        self.loginManager.logInWithReadPermissions(["public_profile", "email"], fromViewController: fromViewController, handler: self.loginHandler)
+    func login() {
+        self.loginManager.logInWithReadPermissions(["public_profile", "email"], fromViewController: Auth.sharedInstance.loginViewController, handler: self.loginHandler)
     }
     
     func logout() {
@@ -85,7 +87,7 @@ class AuthFacebook: NSObject, AuthAppMethod {
             let picData: NSData = NSData(contentsOfURL: picURL)!
             let pic: UIImage = UIImage(data: picData)!
             
-            let authUser = AuthUser(userId: userId, accessToken: accessToken, name: name, email: email, pic: pic)
+            let authUser = AuthUser(service: .Facebook, userId: userId, accessToken: accessToken, name: name, email: email, pic: pic)
             self.delegate?.loginSuccess(.Facebook, user: authUser)
         }
     }

@@ -18,7 +18,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.labelStatus.text = loginService;
+        self.labelStatus.text = self.loginService;
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.labelStatus.text = self.loginService
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +34,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func didTapSignOut(sender: AnyObject) {
         if(sender as! NSObject == self.buttonSignOut) {
-            GIDSignIn.sharedInstance().signOut()
+            Auth.sharedInstance.logout()
         }
         self.performSegueWithIdentifier("UnwindSegueHomeToLogin", sender: self);
     }

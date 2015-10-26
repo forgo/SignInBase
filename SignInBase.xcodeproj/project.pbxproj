@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BB6328CC912F114F778EE0E /* libPods-SignInBaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D37A01B04E765D03B4AEBFCA /* libPods-SignInBaseTests.a */; };
+		202308B1B70A5E691554822A /* Pods_SignInBaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E79AB4AB9E52C1A523B53B /* Pods_SignInBaseTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		28E053F8DF0369AF119EA630 /* Pods_SignInBaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230BB9C28298238849AD2B7D /* Pods_SignInBaseUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		3F2B0FDAD1EE4EC9CFE9C436 /* Pods_SignInBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE79991F49E0C4F416CBF8B9 /* Pods_SignInBase.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4F2ADEF51BDC8CD20096A71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
 		4F2ADEF61BDC8CEB0096A71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
 		4F2ADEF71BDC8CEC0096A71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
@@ -39,6 +41,8 @@
 		4F2ADF2B1BDD95A30096A71E /* AuthDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */; settings = {ASSET_TAGS = (); }; };
 		4F2ADF2C1BDD95A30096A71E /* AuthDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */; settings = {ASSET_TAGS = (); }; };
 		4F2ADF2D1BDD95A30096A71E /* AuthDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF331BDDC43A0096A71E /* AuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF321BDDC43A0096A71E /* AuthMethod.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF371BDDDFA10096A71E /* AuthConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF361BDDDFA10096A71E /* AuthConstant.swift */; settings = {ASSET_TAGS = (); }; };
 		4FA952681BDC8C05003BDECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA952671BDC8C05003BDECA /* AppDelegate.swift */; };
 		4FA9526A1BDC8C05003BDECA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA952691BDC8C05003BDECA /* LoginViewController.swift */; };
 		4FA9526D1BDC8C05003BDECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA9526B1BDC8C05003BDECA /* Main.storyboard */; };
@@ -47,8 +51,6 @@
 		4FA952751BDC8C05003BDECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA952731BDC8C05003BDECA /* LaunchScreen.storyboard */; };
 		4FA952801BDC8C05003BDECA /* SignInBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9527F1BDC8C05003BDECA /* SignInBaseTests.swift */; };
 		4FA9528B1BDC8C05003BDECA /* SignInBaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9528A1BDC8C05003BDECA /* SignInBaseUITests.swift */; };
-		C39088B0D73384D75E154D3C /* libPods-SignInBaseUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 398494C7B812C5DC117477C1 /* libPods-SignInBaseUITests.a */; };
-		D1A49F949E0DF0CE4F09BCCE /* libPods-SignInBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8873E4137F84BC1B0479413C /* libPods-SignInBase.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,9 +73,9 @@
 /* Begin PBXFileReference section */
 		042B16B54DD4678AA99831A5 /* Pods-SignInBaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignInBaseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignInBaseUITests/Pods-SignInBaseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		145FCC9BFBA5752AD5CD3D6D /* Pods-SignInBaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignInBaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignInBaseTests/Pods-SignInBaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		230BB9C28298238849AD2B7D /* Pods_SignInBaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignInBaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27375614EDC8ED5B2DC55ED5 /* Pods-SignInBaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignInBaseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignInBaseUITests/Pods-SignInBaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2DE432BF163DC031C2939F60 /* Pods-SignInBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignInBaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignInBaseTests/Pods-SignInBaseTests.release.xcconfig"; sourceTree = "<group>"; };
-		398494C7B812C5DC117477C1 /* libPods-SignInBaseUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SignInBaseUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4F2ADEF81BDC8D9B0096A71E /* SignInBase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignInBase-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F2ADEFB1BDC93D80096A71E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,8 @@
 		4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthMethodType.swift; sourceTree = "<group>"; };
 		4F2ADF261BDD83000096A71E /* AuthUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
 		4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthDefaults.swift; sourceTree = "<group>"; };
+		4F2ADF321BDDC43A0096A71E /* AuthMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthMethod.swift; sourceTree = "<group>"; };
+		4F2ADF361BDDDFA10096A71E /* AuthConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthConstant.swift; sourceTree = "<group>"; };
 		4FA952641BDC8C05003BDECA /* SignInBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA952671BDC8C05003BDECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FA952691BDC8C05003BDECA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -104,9 +108,9 @@
 		4FA952861BDC8C05003BDECA /* SignInBaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignInBaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA9528A1BDC8C05003BDECA /* SignInBaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInBaseUITests.swift; sourceTree = "<group>"; };
 		4FA9528C1BDC8C05003BDECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8873E4137F84BC1B0479413C /* libPods-SignInBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SignInBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97616B845E6437684118C75 /* Pods-SignInBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignInBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignInBase/Pods-SignInBase.debug.xcconfig"; sourceTree = "<group>"; };
-		D37A01B04E765D03B4AEBFCA /* libPods-SignInBaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SignInBaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE79991F49E0C4F416CBF8B9 /* Pods_SignInBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignInBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3E79AB4AB9E52C1A523B53B /* Pods_SignInBaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignInBaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3DCE75DE47F4A99A1D5F64 /* Pods-SignInBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignInBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignInBase/Pods-SignInBase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,9 +120,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F2ADF131BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */,
-				D1A49F949E0DF0CE4F09BCCE /* libPods-SignInBase.a in Frameworks */,
 				4F2ADF0D1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */,
 				4F2ADF101BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */,
+				3F2B0FDAD1EE4EC9CFE9C436 /* Pods_SignInBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,9 +131,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F2ADF141BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */,
-				1BB6328CC912F114F778EE0E /* libPods-SignInBaseTests.a in Frameworks */,
 				4F2ADF0E1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */,
 				4F2ADF111BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */,
+				202308B1B70A5E691554822A /* Pods_SignInBaseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F2ADF151BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */,
-				C39088B0D73384D75E154D3C /* libPods-SignInBaseUITests.a in Frameworks */,
 				4F2ADF0F1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */,
 				4F2ADF121BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */,
+				28E053F8DF0369AF119EA630 /* Pods_SignInBaseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,8 +175,10 @@
 				4F2ADF041BDCABCE0096A71E /* AuthCustom.swift */,
 				4F2ADF081BDD59170096A71E /* AuthDelegate.swift */,
 				4F2ADF1A1BDD69A70096A71E /* AuthAppMethod.swift */,
+				4F2ADF321BDDC43A0096A71E /* AuthMethod.swift */,
 				4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */,
 				4F2ADF261BDD83000096A71E /* AuthUser.swift */,
+				4F2ADF361BDDDFA10096A71E /* AuthConstant.swift */,
 			);
 			name = Authentication;
 			sourceTree = "<group>";
@@ -241,9 +247,9 @@
 				4F2ADF0A1BDD63500096A71E /* FBSDKCoreKit.framework */,
 				4F2ADF0B1BDD63500096A71E /* FBSDKLoginKit.framework */,
 				4F2ADF0C1BDD63500096A71E /* FBSDKShareKit.framework */,
-				8873E4137F84BC1B0479413C /* libPods-SignInBase.a */,
-				D37A01B04E765D03B4AEBFCA /* libPods-SignInBaseTests.a */,
-				398494C7B812C5DC117477C1 /* libPods-SignInBaseUITests.a */,
+				DE79991F49E0C4F416CBF8B9 /* Pods_SignInBase.framework */,
+				E3E79AB4AB9E52C1A523B53B /* Pods_SignInBaseTests.framework */,
+				230BB9C28298238849AD2B7D /* Pods_SignInBaseUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 				4FA952611BDC8C05003BDECA /* Frameworks */,
 				4FA952621BDC8C05003BDECA /* Resources */,
 				D5273B7FEF63ABA2F5B55A2E /* Copy Pods Resources */,
+				4E6C25C1CCC14D382FD50B26 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,6 +286,7 @@
 				4FA952781BDC8C05003BDECA /* Frameworks */,
 				4FA952791BDC8C05003BDECA /* Resources */,
 				6D6209B985F8EA0117A07081 /* Copy Pods Resources */,
+				260DB70A443D877529E98F7B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -399,6 +407,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		260DB70A443D877529E98F7B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignInBaseTests/Pods-SignInBaseTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		341A3C09EB57CFC2A85B75EB /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,6 +450,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E6C25C1CCC14D382FD50B26 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignInBase/Pods-SignInBase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6D6209B985F8EA0117A07081 /* Copy Pods Resources */ = {
@@ -490,10 +528,12 @@
 				4F2ADF271BDD83000096A71E /* AuthUser.swift in Sources */,
 				4FA952681BDC8C05003BDECA /* AppDelegate.swift in Sources */,
 				4F2ADF031BDCA6200096A71E /* AuthFacebook.swift in Sources */,
+				4F2ADF371BDDDFA10096A71E /* AuthConstant.swift in Sources */,
 				4F2ADF1B1BDD69A70096A71E /* AuthAppMethod.swift in Sources */,
 				4F2ADEFC1BDC93D80096A71E /* HomeViewController.swift in Sources */,
 				4F2ADF011BDCA6130096A71E /* AuthGoogle.swift in Sources */,
 				4F2ADF231BDD77BC0096A71E /* AuthMethodType.swift in Sources */,
+				4F2ADF331BDDC43A0096A71E /* AuthMethod.swift in Sources */,
 				4F2ADEFE1BDCA01A0096A71E /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,46 +10,39 @@ import Foundation
 
 class AuthDefaults {
     
-    var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+    // Singleton
+    static let sharedInstance = AuthDefaults()
+    private init() {}
     
-//    var user: AuthUser {
-//        get {
-//            if let userDefaults = defaults.stringForKey("userDefaultsAuthUserKey") {
-//                if let authUser = AuthUser(
-//            }
-//        }
-//    }
-}
+    private var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+    
+    var email: String {
+        get {
+            if let email = self.defaults.stringForKey(AuthConstant.Default.KeyEmail) {
+                return email
+            }
+            else {
+                return AuthConstant.Default.NeverLoggedInEmail
+            }
+        }
+        set {
+            self.defaults.setValue(newValue, forKey: AuthConstant.Default.KeyEmail)
+        }
+    }
+    
+    var authMethod: String {
+        get {
+            if let authMethod = self.defaults.stringForKey(AuthConstant.Default.KeyAuthMethod) {
+                return authMethod
+            }
+            else {
+                return AuthConstant.Default.NeverLoggedInAuthMethod
+            }
+        }
+        set {
+            self.defaults.setValue(newValue, forKey: AuthConstant.Default.KeyAuthMethod)
+        }
+    }
+    
 
-//    var loginMethod : LoginMethod {
-//
-//        get {
-//            let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-//            if let method = defaults.stringForKey(userDefaultsLoginMethodKey) {
-//                if let loginMethod = LoginMethod(rawValue: method) {
-//                    return loginMethod
-//                }
-//            }
-//            return LoginMethod.NotLoggedIn
-//        }
-//        set {
-//            let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-//            defaults.setValue(newValue.rawValue, forKey: userDefaultsLoginMethodKey)
-//        }
-//    }
-//
-//    var accessToken : String? {
-//
-//        get {
-//            let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-//            if let token = defaults.stringForKey(userDefaultsAppTokenKey) {
-//                return token
-//            }
-//            return nil
-//        }
-//        set {
-//            let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-//            defaults.setValue(newValue, forKey: userDefaultsAppTokenKey)
-//        }
-//    }
-//
+}
