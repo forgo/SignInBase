@@ -10,6 +10,7 @@ import Foundation
 
 struct AuthConstant {
     struct Default {
+        static let AuthMethod = AuthMethodType.Custom
         static let KeyEmail = "kUserDefaultsEmailKey"
         static let KeyAuthMethod = "kUserDefaultsAuthMethodKey"
         static let NeverLoggedInEmail = "UserDefaultsNeverLoggedInEmail"

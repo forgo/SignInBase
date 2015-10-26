@@ -12,7 +12,8 @@ import UIKit
 struct AuthUser: CreateableSecureStorable,
                  ReadableSecureStorable,
                  DeleteableSecureStorable,
-                 GenericPasswordSecureStorable {
+                 GenericPasswordSecureStorable,
+                 CustomStringConvertible {
 
     var userId: String
     var accessToken: String
@@ -36,11 +37,11 @@ struct AuthUser: CreateableSecureStorable,
     }
     
     init() {
-        self.service = AuthDefaults.sharedInstance.authMethod
+        self.service = AuthConstant.Default.AuthMethod.rawValue
         self.userId = ""
         self.accessToken = ""
         self.name = ""
-        self.email = AuthDefaults.sharedInstance.email
+        self.email = ""
         self.pic = AuthConstant.Default.ProfilePic
     }
     
@@ -51,5 +52,10 @@ struct AuthUser: CreateableSecureStorable,
         self.name = name
         self.email = email
         self.pic = pic
+    }
+    
+    var description: String {
+        let tokenAbbreviation: String = self.accessToken.substringWithRange(Range<String.Index>(start: self.accessToken.startIndex, end: self.accessToken.startIndex.advancedBy(10))) + "..."
+        return "AuthUser(\n\tservice: \(self.service)\n\tuserId: \(self.userId)\n\taccessToken: \(tokenAbbreviation)\n\tname: \(self.name)\n\temail: \(self.email)\n\tpic: \(self.pic)\n)"
     }
 }

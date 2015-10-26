@@ -32,7 +32,7 @@ class Auth: NSObject, AuthDelegate {
     
     private static func getSecuredUser() -> AuthUser {
         
-        var securedUser: AuthUser?
+        var securedUser: AuthUser = AuthUser()
         
         // Attempt to load last email and login service used from NSUserDefaults
         let defaultEmail: String = AuthDefaults.sharedInstance.email
@@ -66,7 +66,7 @@ class Auth: NSObject, AuthDelegate {
     var loginViewController: UIViewController?
     
     // Locksmith Secure Storable
-    var securedUser: AuthUser = AuthUser()
+    var securedUser: AuthUser
     
     // Keep Track of Current Login Method
     var currentAuthMethod: AuthMethodType
@@ -92,8 +92,14 @@ class Auth: NSObject, AuthDelegate {
         }
         
         self.securedUser = user;
-        print("AutUser = ", self.securedUser)
+        print(self.securedUser.description)
 
+        do {
+            try self.securedUser.deleteFromSecureStore()
+        } catch {
+            print("Something went wrong trying to delete existing secure store user")
+        }
+        
         do {
             try self.securedUser.createInSecureStore()
         } catch {
@@ -169,6 +175,10 @@ class Auth: NSObject, AuthDelegate {
 
     // MARK: - Auth Helpers
     
+    func isLoggedIn() -> Bool {
+        return self.google.isLoggedIn() || self.facebook.isLoggedIn() || self.custom.isLoggedIn()
+    }
+    
     func login(method: AuthMethodType) {
         switch method {
         case .Google:
@@ -202,7 +212,7 @@ class Auth: NSObject, AuthDelegate {
     }
     
     func logout() {
-        
+
         // Logout of anything that thinks we're logged in
         if(self.google.isLoggedIn()) {
             print("Attempting Google logout.")
@@ -228,32 +238,6 @@ class Auth: NSObject, AuthDelegate {
             print("Already logged out of Custom.")
         }
         
-//        switch method {
-//        case .Google:
-//            if(self.google.isLoggedIn()) {
-//                print("Attempting Google logout.")
-//                self.google.logout()
-//            }
-//            else {
-//                print("Already logged out of Google.")
-//            }
-//        case .Facebook:
-//            if(self.facebook.isLoggedIn()) {
-//                print("Attempting Facebook logout.")
-//                self.facebook.logout()
-//            }
-//            else {
-//                print("Already logged out of Facebook.")
-//            }
-//        case .Custom:
-//            if(self.custom.isLoggedIn()) {
-//                print("Attempting Custom logout.")
-//                self.custom.logout()
-//            }
-//            else {
-//                print("Already logged out of Custom.")
-//            }
-//        }
     }
 
 }

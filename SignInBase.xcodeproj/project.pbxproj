@@ -167,6 +167,7 @@
 		4F2ADEFF1BDCA5190096A71E /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				4FA952691BDC8C05003BDECA /* LoginViewController.swift */,
 				4F2ADEFD1BDCA01A0096A71E /* Auth.swift */,
 				4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */,
 				4F2ADF061BDD586D0096A71E /* AuthState.swift */,
@@ -210,7 +211,6 @@
 			children = (
 				4F2ADEFF1BDCA5190096A71E /* Authentication */,
 				4FA952671BDC8C05003BDECA /* AppDelegate.swift */,
-				4FA952691BDC8C05003BDECA /* LoginViewController.swift */,
 				4FA9526B1BDC8C05003BDECA /* Main.storyboard */,
 				4F2ADEFB1BDC93D80096A71E /* HomeViewController.swift */,
 				4FA952711BDC8C05003BDECA /* Assets.xcassets */,

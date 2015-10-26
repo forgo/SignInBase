@@ -18,9 +18,23 @@ class LoginViewController: UIViewController, AuthUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        // Setup Auth Helper
         Auth.sharedInstance.authUIDelegate = self
         Auth.sharedInstance.loginViewController = self
+        
+        // Hide Interface Until We Know Logged In
+        self.view.hidden = true
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        // Skip Login If Already Logged In
+        if(Auth.sharedInstance.isLoggedIn()) {
+            self.performSegueWithIdentifier("SegueLoginToHome", sender: self)
+        }
+        else {
+            self.view.hidden = false
+        }
     }
 
     override func didReceiveMemoryWarning() {
