@@ -7,14 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BB6328CC912F114F778EE0E /* libPods-SignInBaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D37A01B04E765D03B4AEBFCA /* libPods-SignInBaseTests.a */; };
+		4F2ADEF51BDC8CD20096A71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
+		4F2ADEF61BDC8CEB0096A71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
+		4F2ADEF71BDC8CEC0096A71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
+		4F2ADEFC1BDC93D80096A71E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADEFB1BDC93D80096A71E /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADEFE1BDCA01A0096A71E /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADEFD1BDCA01A0096A71E /* Auth.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF011BDCA6130096A71E /* AuthGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF001BDCA6130096A71E /* AuthGoogle.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF031BDCA6200096A71E /* AuthFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF021BDCA6200096A71E /* AuthFacebook.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF051BDCABCE0096A71E /* AuthCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF041BDCABCE0096A71E /* AuthCustom.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF071BDD586D0096A71E /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF061BDD586D0096A71E /* AuthState.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF091BDD59170096A71E /* AuthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF081BDD59170096A71E /* AuthDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF0D1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0A1BDD63500096A71E /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF0E1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0A1BDD63500096A71E /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF0F1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0A1BDD63500096A71E /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF101BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0B1BDD63500096A71E /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF111BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0B1BDD63500096A71E /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF121BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0B1BDD63500096A71E /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF131BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0C1BDD63500096A71E /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF141BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0C1BDD63500096A71E /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF151BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0C1BDD63500096A71E /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF1B1BDD69A70096A71E /* AuthAppMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF1A1BDD69A70096A71E /* AuthAppMethod.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF1C1BDD69A70096A71E /* AuthAppMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF1A1BDD69A70096A71E /* AuthAppMethod.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF1D1BDD69A70096A71E /* AuthAppMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF1A1BDD69A70096A71E /* AuthAppMethod.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF231BDD77BC0096A71E /* AuthMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF241BDD77BC0096A71E /* AuthMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF251BDD77BC0096A71E /* AuthMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF271BDD83000096A71E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF261BDD83000096A71E /* AuthUser.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF281BDD83000096A71E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF261BDD83000096A71E /* AuthUser.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF291BDD83000096A71E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF261BDD83000096A71E /* AuthUser.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF2B1BDD95A30096A71E /* AuthDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF2C1BDD95A30096A71E /* AuthDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADF2D1BDD95A30096A71E /* AuthDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */; settings = {ASSET_TAGS = (); }; };
 		4FA952681BDC8C05003BDECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA952671BDC8C05003BDECA /* AppDelegate.swift */; };
-		4FA9526A1BDC8C05003BDECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA952691BDC8C05003BDECA /* ViewController.swift */; };
+		4FA9526A1BDC8C05003BDECA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA952691BDC8C05003BDECA /* LoginViewController.swift */; };
 		4FA9526D1BDC8C05003BDECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA9526B1BDC8C05003BDECA /* Main.storyboard */; };
 		4FA952701BDC8C05003BDECA /* SignInBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9526E1BDC8C05003BDECA /* SignInBase.xcdatamodeld */; };
 		4FA952721BDC8C05003BDECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA952711BDC8C05003BDECA /* Assets.xcassets */; };
 		4FA952751BDC8C05003BDECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA952731BDC8C05003BDECA /* LaunchScreen.storyboard */; };
 		4FA952801BDC8C05003BDECA /* SignInBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9527F1BDC8C05003BDECA /* SignInBaseTests.swift */; };
 		4FA9528B1BDC8C05003BDECA /* SignInBaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9528A1BDC8C05003BDECA /* SignInBaseUITests.swift */; };
+		C39088B0D73384D75E154D3C /* libPods-SignInBaseUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 398494C7B812C5DC117477C1 /* libPods-SignInBaseUITests.a */; };
+		D1A49F949E0DF0CE4F09BCCE /* libPods-SignInBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8873E4137F84BC1B0479413C /* libPods-SignInBase.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +69,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042B16B54DD4678AA99831A5 /* Pods-SignInBaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignInBaseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignInBaseUITests/Pods-SignInBaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		145FCC9BFBA5752AD5CD3D6D /* Pods-SignInBaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignInBaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignInBaseTests/Pods-SignInBaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		27375614EDC8ED5B2DC55ED5 /* Pods-SignInBaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignInBaseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignInBaseUITests/Pods-SignInBaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DE432BF163DC031C2939F60 /* Pods-SignInBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignInBaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignInBaseTests/Pods-SignInBaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		398494C7B812C5DC117477C1 /* libPods-SignInBaseUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SignInBaseUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F2ADEF81BDC8D9B0096A71E /* SignInBase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignInBase-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F2ADEFB1BDC93D80096A71E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4F2ADEFD1BDCA01A0096A71E /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		4F2ADF001BDCA6130096A71E /* AuthGoogle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthGoogle.swift; sourceTree = "<group>"; };
+		4F2ADF021BDCA6200096A71E /* AuthFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFacebook.swift; sourceTree = "<group>"; };
+		4F2ADF041BDCABCE0096A71E /* AuthCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCustom.swift; sourceTree = "<group>"; };
+		4F2ADF061BDD586D0096A71E /* AuthState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		4F2ADF081BDD59170096A71E /* AuthDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthDelegate.swift; sourceTree = "<group>"; };
+		4F2ADF0A1BDD63500096A71E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		4F2ADF0B1BDD63500096A71E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		4F2ADF0C1BDD63500096A71E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		4F2ADF1A1BDD69A70096A71E /* AuthAppMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthAppMethod.swift; sourceTree = "<group>"; };
+		4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthMethodType.swift; sourceTree = "<group>"; };
+		4F2ADF261BDD83000096A71E /* AuthUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
+		4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthDefaults.swift; sourceTree = "<group>"; };
 		4FA952641BDC8C05003BDECA /* SignInBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA952671BDC8C05003BDECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4FA952691BDC8C05003BDECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FA952691BDC8C05003BDECA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4FA9526C1BDC8C05003BDECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FA9526F1BDC8C05003BDECA /* SignInBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SignInBase.xcdatamodel; sourceTree = "<group>"; };
 		4FA952711BDC8C05003BDECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +104,10 @@
 		4FA952861BDC8C05003BDECA /* SignInBaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignInBaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA9528A1BDC8C05003BDECA /* SignInBaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInBaseUITests.swift; sourceTree = "<group>"; };
 		4FA9528C1BDC8C05003BDECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8873E4137F84BC1B0479413C /* libPods-SignInBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SignInBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97616B845E6437684118C75 /* Pods-SignInBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignInBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignInBase/Pods-SignInBase.debug.xcconfig"; sourceTree = "<group>"; };
+		D37A01B04E765D03B4AEBFCA /* libPods-SignInBaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SignInBaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3DCE75DE47F4A99A1D5F64 /* Pods-SignInBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignInBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignInBase/Pods-SignInBase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +115,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2ADF131BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */,
+				D1A49F949E0DF0CE4F09BCCE /* libPods-SignInBase.a in Frameworks */,
+				4F2ADF0D1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */,
+				4F2ADF101BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +126,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2ADF141BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */,
+				1BB6328CC912F114F778EE0E /* libPods-SignInBaseTests.a in Frameworks */,
+				4F2ADF0E1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */,
+				4F2ADF111BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +137,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2ADF151BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */,
+				C39088B0D73384D75E154D3C /* libPods-SignInBaseUITests.a in Frameworks */,
+				4F2ADF0F1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */,
+				4F2ADF121BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CFBF4F82E54F2CBCC0839F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C97616B845E6437684118C75 /* Pods-SignInBase.debug.xcconfig */,
+				FC3DCE75DE47F4A99A1D5F64 /* Pods-SignInBase.release.xcconfig */,
+				145FCC9BFBA5752AD5CD3D6D /* Pods-SignInBaseTests.debug.xcconfig */,
+				2DE432BF163DC031C2939F60 /* Pods-SignInBaseTests.release.xcconfig */,
+				27375614EDC8ED5B2DC55ED5 /* Pods-SignInBaseUITests.debug.xcconfig */,
+				042B16B54DD4678AA99831A5 /* Pods-SignInBaseUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F2ADEFF1BDCA5190096A71E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4F2ADEFD1BDCA01A0096A71E /* Auth.swift */,
+				4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */,
+				4F2ADF061BDD586D0096A71E /* AuthState.swift */,
+				4F2ADF001BDCA6130096A71E /* AuthGoogle.swift */,
+				4F2ADF021BDCA6200096A71E /* AuthFacebook.swift */,
+				4F2ADF041BDCABCE0096A71E /* AuthCustom.swift */,
+				4F2ADF081BDD59170096A71E /* AuthDelegate.swift */,
+				4F2ADF1A1BDD69A70096A71E /* AuthAppMethod.swift */,
+				4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */,
+				4F2ADF261BDD83000096A71E /* AuthUser.swift */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
 		4FA9525B1BDC8C05003BDECA = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +184,8 @@
 				4FA9527E1BDC8C05003BDECA /* SignInBaseTests */,
 				4FA952891BDC8C05003BDECA /* SignInBaseUITests */,
 				4FA952651BDC8C05003BDECA /* Products */,
+				3CFBF4F82E54F2CBCC0839F7 /* Pods */,
+				7F225BEF3F6F0199E54CA572 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +202,17 @@
 		4FA952661BDC8C05003BDECA /* SignInBase */ = {
 			isa = PBXGroup;
 			children = (
+				4F2ADEFF1BDCA5190096A71E /* Authentication */,
 				4FA952671BDC8C05003BDECA /* AppDelegate.swift */,
-				4FA952691BDC8C05003BDECA /* ViewController.swift */,
+				4FA952691BDC8C05003BDECA /* LoginViewController.swift */,
 				4FA9526B1BDC8C05003BDECA /* Main.storyboard */,
+				4F2ADEFB1BDC93D80096A71E /* HomeViewController.swift */,
 				4FA952711BDC8C05003BDECA /* Assets.xcassets */,
 				4FA952731BDC8C05003BDECA /* LaunchScreen.storyboard */,
 				4FA952761BDC8C05003BDECA /* Info.plist */,
+				4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */,
 				4FA9526E1BDC8C05003BDECA /* SignInBase.xcdatamodeld */,
+				4F2ADEF81BDC8D9B0096A71E /* SignInBase-Bridging-Header.h */,
 			);
 			path = SignInBase;
 			sourceTree = "<group>";
@@ -128,6 +235,19 @@
 			path = SignInBaseUITests;
 			sourceTree = "<group>";
 		};
+		7F225BEF3F6F0199E54CA572 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F2ADF0A1BDD63500096A71E /* FBSDKCoreKit.framework */,
+				4F2ADF0B1BDD63500096A71E /* FBSDKLoginKit.framework */,
+				4F2ADF0C1BDD63500096A71E /* FBSDKShareKit.framework */,
+				8873E4137F84BC1B0479413C /* libPods-SignInBase.a */,
+				D37A01B04E765D03B4AEBFCA /* libPods-SignInBaseTests.a */,
+				398494C7B812C5DC117477C1 /* libPods-SignInBaseUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FA9528F1BDC8C05003BDECA /* Build configuration list for PBXNativeTarget "SignInBase" */;
 			buildPhases = (
+				39CE5F3C960DD494CD26B7B2 /* Check Pods Manifest.lock */,
 				4FA952601BDC8C05003BDECA /* Sources */,
 				4FA952611BDC8C05003BDECA /* Frameworks */,
 				4FA952621BDC8C05003BDECA /* Resources */,
+				D5273B7FEF63ABA2F5B55A2E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FA952921BDC8C05003BDECA /* Build configuration list for PBXNativeTarget "SignInBaseTests" */;
 			buildPhases = (
+				05D201EDB8E45DB89216D100 /* Check Pods Manifest.lock */,
 				4FA952771BDC8C05003BDECA /* Sources */,
 				4FA952781BDC8C05003BDECA /* Frameworks */,
 				4FA952791BDC8C05003BDECA /* Resources */,
+				6D6209B985F8EA0117A07081 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FA952951BDC8C05003BDECA /* Build configuration list for PBXNativeTarget "SignInBaseUITests" */;
 			buildPhases = (
+				8BC8631E7D28222AE1D1701C /* Check Pods Manifest.lock */,
 				4FA952821BDC8C05003BDECA /* Sources */,
 				4FA952831BDC8C05003BDECA /* Frameworks */,
 				4FA952841BDC8C05003BDECA /* Resources */,
+				341A3C09EB57CFC2A85B75EB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,6 +316,7 @@
 		4FA9525C1BDC8C05003BDECA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Elliott Richerson";
 				TargetAttributes = {
@@ -232,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FA952751BDC8C05003BDECA /* LaunchScreen.storyboard in Resources */,
+				4F2ADEF51BDC8CD20096A71E /* GoogleService-Info.plist in Resources */,
 				4FA952721BDC8C05003BDECA /* Assets.xcassets in Resources */,
 				4FA9526D1BDC8C05003BDECA /* Main.storyboard in Resources */,
 			);
@@ -241,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2ADEF61BDC8CEB0096A71E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,19 +377,124 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2ADEF71BDC8CEC0096A71E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05D201EDB8E45DB89216D100 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		341A3C09EB57CFC2A85B75EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignInBaseUITests/Pods-SignInBaseUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39CE5F3C960DD494CD26B7B2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D6209B985F8EA0117A07081 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignInBaseTests/Pods-SignInBaseTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC8631E7D28222AE1D1701C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5273B7FEF63ABA2F5B55A2E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignInBase/Pods-SignInBase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4FA952601BDC8C05003BDECA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA9526A1BDC8C05003BDECA /* ViewController.swift in Sources */,
+				4F2ADF051BDCABCE0096A71E /* AuthCustom.swift in Sources */,
+				4F2ADF071BDD586D0096A71E /* AuthState.swift in Sources */,
+				4F2ADF091BDD59170096A71E /* AuthDelegate.swift in Sources */,
+				4FA9526A1BDC8C05003BDECA /* LoginViewController.swift in Sources */,
 				4FA952701BDC8C05003BDECA /* SignInBase.xcdatamodeld in Sources */,
+				4F2ADF2B1BDD95A30096A71E /* AuthDefaults.swift in Sources */,
+				4F2ADF271BDD83000096A71E /* AuthUser.swift in Sources */,
 				4FA952681BDC8C05003BDECA /* AppDelegate.swift in Sources */,
+				4F2ADF031BDCA6200096A71E /* AuthFacebook.swift in Sources */,
+				4F2ADF1B1BDD69A70096A71E /* AuthAppMethod.swift in Sources */,
+				4F2ADEFC1BDC93D80096A71E /* HomeViewController.swift in Sources */,
+				4F2ADF011BDCA6130096A71E /* AuthGoogle.swift in Sources */,
+				4F2ADF231BDD77BC0096A71E /* AuthMethodType.swift in Sources */,
+				4F2ADEFE1BDCA01A0096A71E /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +502,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2ADF1C1BDD69A70096A71E /* AuthAppMethod.swift in Sources */,
+				4F2ADF241BDD77BC0096A71E /* AuthMethodType.swift in Sources */,
+				4F2ADF281BDD83000096A71E /* AuthUser.swift in Sources */,
 				4FA952801BDC8C05003BDECA /* SignInBaseTests.swift in Sources */,
+				4F2ADF2C1BDD95A30096A71E /* AuthDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +514,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2ADF1D1BDD69A70096A71E /* AuthAppMethod.swift in Sources */,
+				4F2ADF251BDD77BC0096A71E /* AuthMethodType.swift in Sources */,
+				4F2ADF291BDD83000096A71E /* AuthUser.swift in Sources */,
 				4FA9528B1BDC8C05003BDECA /* SignInBaseUITests.swift in Sources */,
+				4F2ADF2D1BDD95A30096A71E /* AuthDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,30 +640,50 @@
 		};
 		4FA952901BDC8C05003BDECA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C97616B845E6437684118C75 /* Pods-SignInBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SignInBase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyondaphelion.SignInBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SignInBase/SignInBase-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4FA952911BDC8C05003BDECA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC3DCE75DE47F4A99A1D5F64 /* Pods-SignInBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SignInBase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyondaphelion.SignInBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SignInBase/SignInBase-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		4FA952931BDC8C05003BDECA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 145FCC9BFBA5752AD5CD3D6D /* Pods-SignInBaseTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SignInBaseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyondaphelion.SignInBaseTests;
@@ -432,8 +694,13 @@
 		};
 		4FA952941BDC8C05003BDECA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE432BF163DC031C2939F60 /* Pods-SignInBaseTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SignInBaseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyondaphelion.SignInBaseTests;
@@ -444,7 +711,12 @@
 		};
 		4FA952961BDC8C05003BDECA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27375614EDC8ED5B2DC55ED5 /* Pods-SignInBaseUITests.debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SignInBaseUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyondaphelion.SignInBaseUITests;
@@ -456,7 +728,12 @@
 		};
 		4FA952971BDC8C05003BDECA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 042B16B54DD4678AA99831A5 /* Pods-SignInBaseUITests.release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SignInBaseUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyondaphelion.SignInBaseUITests;
@@ -485,6 +762,7 @@
 				4FA952911BDC8C05003BDECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FA952921BDC8C05003BDECA /* Build configuration list for PBXNativeTarget "SignInBaseTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +771,7 @@
 				4FA952941BDC8C05003BDECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FA952951BDC8C05003BDECA /* Build configuration list for PBXNativeTarget "SignInBaseUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +780,7 @@
 				4FA952971BDC8C05003BDECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
