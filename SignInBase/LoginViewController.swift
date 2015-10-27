@@ -10,11 +10,12 @@ import UIKit
 
 class LoginViewController: UIViewController, AuthUIDelegate, UITextFieldDelegate {
 
-    @IBOutlet weak var buttonSignInFacebook: UIButton!
-    @IBOutlet weak var buttonSignInGoogle: UIButton!
+    @IBOutlet weak var buttonLoginFacebook: UIButton!
+    @IBOutlet weak var buttonLoginGoogle: UIButton!
     
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
+    @IBOutlet weak var buttonLogin: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,17 @@ class LoginViewController: UIViewController, AuthUIDelegate, UITextFieldDelegate
         
         // Hide Interface Until We Know Logged In
         self.view.hidden = true
+        
+        // Login Text Field Configuration
+        self.textFieldEmail.delegate = self
+        self.textFieldPassword.delegate = self
+        self.resetPlaceholder(self.textFieldEmail, placeholder: "email")
+        self.resetPlaceholder(self.textFieldPassword, placeholder: "password")
+    }
+    
+    func resetPlaceholder(textField: UITextField, placeholder: String) {
+        let placeholderTextColor: UIColor = UIColor.whiteColor()
+        textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSForegroundColorAttributeName:placeholderTextColor])
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -48,12 +60,15 @@ class LoginViewController: UIViewController, AuthUIDelegate, UITextFieldDelegate
     
     // MARK: User Actions
     
-    @IBAction func didTapSignIn(sender: AnyObject) {
-        if(sender as! NSObject == self.buttonSignInGoogle) {
+    @IBAction func didTapSignIn(sender: UIButton) {
+        if(sender == self.buttonLoginGoogle) {
             Auth.sharedInstance.login(.Google)
         }
-        else if(sender as! NSObject == self.buttonSignInFacebook) {
+        else if(sender == self.buttonLoginFacebook) {
             Auth.sharedInstance.login(.Facebook)
+        }
+        else if(sender == self.buttonLogin) {
+            Auth.sharedInstance.login(.Custom)
         }
     }
 
@@ -88,17 +103,22 @@ class LoginViewController: UIViewController, AuthUIDelegate, UITextFieldDelegate
     
     // MARK: - UITextFieldDelegate
     func textFieldDidBeginEditing(textField: UITextField) {
-        textField.placeholder = nil
+        if(textField.text?.characters.count == 0) {
+            textField.placeholder = nil
+        }
+    }
+    func textFieldDidEndEditing(textField: UITextField) {
+        if(textField == self.textFieldEmail) {
+            if(textField.text?.characters.count == 0) {
+                self.resetPlaceholder(textField, placeholder: "email")
+            }
+        }
+        else if(textField == self.textFieldPassword) {
+            if(textField.text?.characters.count == 0) {
+                self.resetPlaceholder(textField, placeholder: "password")
+            }
+        }
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
-        if (textField == self.textFieldUsername) {
-            textField.placeholder = "Username"
-        }
-        else if (textField == self.textFieldPassword) {
-            textField.placeholder = "Password"
-        }
-    }
-
 }
 
