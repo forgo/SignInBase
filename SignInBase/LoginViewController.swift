@@ -8,10 +8,10 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, AuthUIDelegate {
+class LoginViewController: UIViewController, AuthUIDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var buttonSignInFacebook: UIButton!
-    @IBOutlet weak var buttonSignInGoogle: GIDSignInButton!
+    @IBOutlet weak var buttonSignInGoogle: UIButton!
     
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
@@ -40,6 +40,10 @@ class LoginViewController: UIViewController, AuthUIDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
     
     // MARK: User Actions
@@ -82,6 +86,19 @@ class LoginViewController: UIViewController, AuthUIDelegate {
         print("Login was unsuccessful")
     }
     
+    // MARK: - UITextFieldDelegate
+    func textFieldDidBeginEditing(textField: UITextField) {
+        textField.placeholder = nil
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        if (textField == self.textFieldUsername) {
+            textField.placeholder = "Username"
+        }
+        else if (textField == self.textFieldPassword) {
+            textField.placeholder = "Password"
+        }
+    }
 
 }
 
