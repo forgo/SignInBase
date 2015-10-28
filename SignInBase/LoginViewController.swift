@@ -15,7 +15,7 @@ class LoginViewController: UIViewController, AuthUIDelegate, UITextFieldDelegate
     
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
-    @IBOutlet weak var buttonLogin: UIButton!
+    @IBOutlet weak var buttonLoginCustom: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,15 +60,34 @@ class LoginViewController: UIViewController, AuthUIDelegate, UITextFieldDelegate
     
     // MARK: User Actions
     
-    @IBAction func didTapSignIn(sender: UIButton) {
+    @IBAction func pressedLoginButton(sender: UIButton) {
         if(sender == self.buttonLoginGoogle) {
-            Auth.sharedInstance.login(.Google)
+            if(Auth.sharedInstance.google.isLoggedIn()) {
+                print("Pressed Google login button, but Google already logged in.")
+                self.performSegueWithIdentifier("SegueLoginToHome", sender: self)
+            }
+            else {
+                Auth.sharedInstance.login(.Google)
+            }
         }
         else if(sender == self.buttonLoginFacebook) {
-            Auth.sharedInstance.login(.Facebook)
+            if(Auth.sharedInstance.facebook.isLoggedIn()) {
+                print("Pressed Facebook login button but Facebook already logged in.")
+                self.performSegueWithIdentifier("SegueLoginToHome", sender: self)
+            }
+            else {
+                Auth.sharedInstance.login(.Facebook)
+            }
+           
         }
-        else if(sender == self.buttonLogin) {
-            Auth.sharedInstance.login(.Custom)
+        else if(sender == self.buttonLoginCustom) {
+            if(Auth.sharedInstance.custom.isLoggedIn()) {
+                print("Pressed Custom login button but already logged in.")
+                self.performSegueWithIdentifier("SegueLoginToHome", sender: self)
+            }
+            else {
+                Auth.sharedInstance.login(.Custom)   
+            }
         }
     }
 

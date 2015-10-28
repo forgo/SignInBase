@@ -10,39 +10,39 @@
 		202308B1B70A5E691554822A /* Pods_SignInBaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E79AB4AB9E52C1A523B53B /* Pods_SignInBaseTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		28E053F8DF0369AF119EA630 /* Pods_SignInBaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230BB9C28298238849AD2B7D /* Pods_SignInBaseUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3F2B0FDAD1EE4EC9CFE9C436 /* Pods_SignInBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE79991F49E0C4F416CBF8B9 /* Pods_SignInBase.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		4F2ADEF51BDC8CD20096A71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
-		4F2ADEF61BDC8CEB0096A71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
-		4F2ADEF71BDC8CEC0096A71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
-		4F2ADEFC1BDC93D80096A71E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADEFB1BDC93D80096A71E /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADEFE1BDCA01A0096A71E /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADEFD1BDCA01A0096A71E /* Auth.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF011BDCA6130096A71E /* AuthGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF001BDCA6130096A71E /* AuthGoogle.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF031BDCA6200096A71E /* AuthFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF021BDCA6200096A71E /* AuthFacebook.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF051BDCABCE0096A71E /* AuthCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF041BDCABCE0096A71E /* AuthCustom.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF071BDD586D0096A71E /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF061BDD586D0096A71E /* AuthState.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF091BDD59170096A71E /* AuthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF081BDD59170096A71E /* AuthDelegate.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF0D1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0A1BDD63500096A71E /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF0E1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0A1BDD63500096A71E /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF0F1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0A1BDD63500096A71E /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF101BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0B1BDD63500096A71E /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF111BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0B1BDD63500096A71E /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF121BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0B1BDD63500096A71E /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF131BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0C1BDD63500096A71E /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF141BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0C1BDD63500096A71E /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF151BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0C1BDD63500096A71E /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF1B1BDD69A70096A71E /* AuthAppMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF1A1BDD69A70096A71E /* AuthAppMethod.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF1C1BDD69A70096A71E /* AuthAppMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF1A1BDD69A70096A71E /* AuthAppMethod.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF1D1BDD69A70096A71E /* AuthAppMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF1A1BDD69A70096A71E /* AuthAppMethod.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF231BDD77BC0096A71E /* AuthMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF241BDD77BC0096A71E /* AuthMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF251BDD77BC0096A71E /* AuthMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF271BDD83000096A71E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF261BDD83000096A71E /* AuthUser.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF281BDD83000096A71E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF261BDD83000096A71E /* AuthUser.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF291BDD83000096A71E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF261BDD83000096A71E /* AuthUser.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF2B1BDD95A30096A71E /* AuthDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF2C1BDD95A30096A71E /* AuthDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF2D1BDD95A30096A71E /* AuthDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF331BDDC43A0096A71E /* AuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF321BDDC43A0096A71E /* AuthMethod.swift */; settings = {ASSET_TAGS = (); }; };
-		4F2ADF371BDDDFA10096A71E /* AuthConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF361BDDDFA10096A71E /* AuthConstant.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2ADEF51BDC8CD20096A71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */; };
+		4F2ADEF61BDC8CEB0096A71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */; };
+		4F2ADEF71BDC8CEC0096A71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ADEF41BDC8CD20096A71E /* GoogleService-Info.plist */; };
+		4F2ADEFC1BDC93D80096A71E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADEFB1BDC93D80096A71E /* HomeViewController.swift */; };
+		4F2ADEFE1BDCA01A0096A71E /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADEFD1BDCA01A0096A71E /* Auth.swift */; };
+		4F2ADF011BDCA6130096A71E /* AuthGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF001BDCA6130096A71E /* AuthGoogle.swift */; };
+		4F2ADF031BDCA6200096A71E /* AuthFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF021BDCA6200096A71E /* AuthFacebook.swift */; };
+		4F2ADF051BDCABCE0096A71E /* AuthCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF041BDCABCE0096A71E /* AuthCustom.swift */; };
+		4F2ADF071BDD586D0096A71E /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF061BDD586D0096A71E /* AuthState.swift */; };
+		4F2ADF091BDD59170096A71E /* AuthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF081BDD59170096A71E /* AuthDelegate.swift */; };
+		4F2ADF0D1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0A1BDD63500096A71E /* FBSDKCoreKit.framework */; };
+		4F2ADF0E1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0A1BDD63500096A71E /* FBSDKCoreKit.framework */; };
+		4F2ADF0F1BDD63500096A71E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0A1BDD63500096A71E /* FBSDKCoreKit.framework */; };
+		4F2ADF101BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0B1BDD63500096A71E /* FBSDKLoginKit.framework */; };
+		4F2ADF111BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0B1BDD63500096A71E /* FBSDKLoginKit.framework */; };
+		4F2ADF121BDD63510096A71E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0B1BDD63500096A71E /* FBSDKLoginKit.framework */; };
+		4F2ADF131BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0C1BDD63500096A71E /* FBSDKShareKit.framework */; };
+		4F2ADF141BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0C1BDD63500096A71E /* FBSDKShareKit.framework */; };
+		4F2ADF151BDD63510096A71E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ADF0C1BDD63500096A71E /* FBSDKShareKit.framework */; };
+		4F2ADF1B1BDD69A70096A71E /* AuthAppMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF1A1BDD69A70096A71E /* AuthAppMethod.swift */; };
+		4F2ADF1C1BDD69A70096A71E /* AuthAppMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF1A1BDD69A70096A71E /* AuthAppMethod.swift */; };
+		4F2ADF1D1BDD69A70096A71E /* AuthAppMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF1A1BDD69A70096A71E /* AuthAppMethod.swift */; };
+		4F2ADF231BDD77BC0096A71E /* AuthMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */; };
+		4F2ADF241BDD77BC0096A71E /* AuthMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */; };
+		4F2ADF251BDD77BC0096A71E /* AuthMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF221BDD77BC0096A71E /* AuthMethodType.swift */; };
+		4F2ADF271BDD83000096A71E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF261BDD83000096A71E /* AuthUser.swift */; };
+		4F2ADF281BDD83000096A71E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF261BDD83000096A71E /* AuthUser.swift */; };
+		4F2ADF291BDD83000096A71E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF261BDD83000096A71E /* AuthUser.swift */; };
+		4F2ADF2B1BDD95A30096A71E /* AuthDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */; };
+		4F2ADF2C1BDD95A30096A71E /* AuthDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */; };
+		4F2ADF2D1BDD95A30096A71E /* AuthDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF2A1BDD95A30096A71E /* AuthDefaults.swift */; };
+		4F2ADF331BDDC43A0096A71E /* AuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF321BDDC43A0096A71E /* AuthMethod.swift */; };
+		4F2ADF371BDDDFA10096A71E /* AuthConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ADF361BDDDFA10096A71E /* AuthConstant.swift */; };
 		4FA952681BDC8C05003BDECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA952671BDC8C05003BDECA /* AppDelegate.swift */; };
 		4FA9526A1BDC8C05003BDECA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA952691BDC8C05003BDECA /* LoginViewController.swift */; };
 		4FA9526D1BDC8C05003BDECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA9526B1BDC8C05003BDECA /* Main.storyboard */; };
@@ -684,11 +684,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SignInBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyondaphelion.SignInBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -703,11 +705,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SignInBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyondaphelion.SignInBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
